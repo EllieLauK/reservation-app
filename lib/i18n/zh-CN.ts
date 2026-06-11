@@ -9,8 +9,8 @@ export const zhCN: Dictionary = {
   },
   home: {
     badge: '顶级美甲沙龙',
-    heroTitle: '完美指甲，',
-    heroTitleAccent: '轻松预约。',
+    heroTitle: '完美指甲',
+    heroTitleAccent: '轻松预约',
     heroDesc: '几分钟内完成线上预约，无需电话，无需等待，只有精致美甲。',
     heroCTA: '立即预约',
     howItWorks: '预约流程',

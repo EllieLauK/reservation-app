@@ -9,8 +9,8 @@ export const zhTW: Dictionary = {
   },
   home: {
     badge: '頂級美甲沙龍',
-    heroTitle: '完美指甲，',
-    heroTitleAccent: '輕鬆預約。',
+    heroTitle: '完美指甲',
+    heroTitleAccent: '輕鬆預約',
     heroDesc: '幾分鐘內完成線上預約，無需電話，無需等待，只有精緻美甲。',
     heroCTA: '立即預約',
     howItWorks: '預約流程',

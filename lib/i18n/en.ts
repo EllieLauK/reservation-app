@@ -7,8 +7,8 @@ export const en = {
   },
   home: {
     badge: 'Premium Nail Salon',
-    heroTitle: 'Beautiful nails,',
-    heroTitleAccent: 'effortlessly booked.',
+    heroTitle: 'Beautiful nails',
+    heroTitleAccent: 'effortlessly booked',
     heroDesc: 'Reserve your appointment online in minutes. No calls, no waiting — just gorgeous nails.',
     heroCTA: 'Book an Appointment',
     howItWorks: 'How It Works',
