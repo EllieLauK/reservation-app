@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import LogoutButton from '@/components/LogoutButton'
 
 export const metadata: Metadata = {
   title: 'Admin — Luxe Nails',
@@ -34,10 +35,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </Link>
           ))}
         </nav>
-        <div className="px-5 py-4 border-t border-stone-800">
-          <Link href="/" className="text-xs text-stone-500 hover:text-stone-300 transition-colors">
+        <div className="px-5 py-4 border-t border-stone-800 space-y-2">
+          <Link href="/" className="block text-xs text-stone-500 hover:text-stone-300 transition-colors">
             ← Back to site
           </Link>
+          <LogoutButton />
         </div>
       </aside>
 

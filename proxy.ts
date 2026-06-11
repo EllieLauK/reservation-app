@@ -12,6 +12,15 @@ function getLocale(request: NextRequest): Locale {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
+  // Protect admin routes (except login page and auth API)
+  if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+    const sessionToken = process.env.ADMIN_SESSION_TOKEN ?? 'dev-session-token'
+    const cookie = request.cookies.get('admin_session')
+    if (!cookie || cookie.value !== sessionToken) {
+      return NextResponse.redirect(new URL('/admin/login', request.url))
+    }
+  }
+
   if (
     pathname.startsWith('/admin') ||
     pathname.startsWith('/api') ||
