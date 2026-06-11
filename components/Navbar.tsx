@@ -15,16 +15,16 @@ export default function Navbar({ dict, locale }: { dict: Dictionary['nav']; loca
   }
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-purple-100 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-[var(--brand-100)] shadow-sm">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href={`/${locale}`} className="text-xl font-semibold text-purple-800 tracking-tight">
+        <Link href={`/${locale}`} className="text-xl font-semibold text-[var(--brand-800)] tracking-tight">
           {dict.brand}
         </Link>
         <div className="flex items-center gap-6">
-          <Link href={`/${locale}/#services`} className="text-sm text-stone-500 hover:text-purple-800 transition-colors hidden sm:block">
+          <Link href={`/${locale}/#services`} className="text-sm text-stone-500 hover:text-[var(--brand-800)] transition-colors hidden sm:block">
             {dict.services}
           </Link>
-          <Link href={`/${locale}/#team`} className="text-sm text-stone-500 hover:text-purple-800 transition-colors hidden sm:block">
+          <Link href={`/${locale}/#team`} className="text-sm text-stone-500 hover:text-[var(--brand-800)] transition-colors hidden sm:block">
             {dict.team}
           </Link>
 
@@ -35,7 +35,9 @@ export default function Navbar({ dict, locale }: { dict: Dictionary['nav']; loca
                 key={l}
                 href={switchLocale(l)}
                 className={`px-2 py-0.5 rounded-full text-xs font-medium transition-colors
-                  ${locale === l ? 'bg-purple-700 text-white' : 'text-stone-500 hover:text-purple-800'}`}
+                  ${locale === l
+                    ? 'bg-[var(--brand-700)] text-white'
+                    : 'text-stone-500 hover:text-[var(--brand-800)]'}`}
               >
                 {localeLabels[l as Locale]}
               </Link>
@@ -44,7 +46,7 @@ export default function Navbar({ dict, locale }: { dict: Dictionary['nav']; loca
 
           <Link
             href={`/${locale}/book`}
-            className="bg-purple-700 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-purple-800 transition-colors"
+            className="bg-[var(--brand-700)] text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-[var(--brand-800)] transition-colors"
           >
             {dict.bookNow}
           </Link>
