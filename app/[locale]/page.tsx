@@ -119,9 +119,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <footer className="bg-stone-900 text-stone-400 py-10 px-6 text-center text-sm">
         <p className="font-semibold text-white mb-1">{h.badge}</p>
         <p>{h.address} &nbsp;·&nbsp; {h.phone}</p>
-        <p className="mt-4 text-stone-600">
-          <Link href="/admin" className="hover:text-stone-400 transition-colors">{h.admin}</Link>
-        </p>
+        <div className="mt-6">
+          <Link
+            href="/admin"
+            className="inline-flex items-center gap-2 border border-stone-700 text-stone-400 hover:border-stone-500 hover:text-stone-200 px-4 py-2 rounded-lg text-xs font-medium transition-colors"
+          >
+            <span>⚙</span> {h.admin}
+          </Link>
+        </div>
       </footer>
     </main>
   )
