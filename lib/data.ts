@@ -63,21 +63,21 @@ export const staff: Staff[] = [
     bio: '8 years of experience specializing in gel and acrylic nails.',
     specialties: ['Gel', 'Acrylics', 'Nail Art'],
     availableDays: [1, 2, 3, 4, 5],
-    initials: 'LC', color: 'bg-rose-300',
+    initials: 'LC', color: 'bg-purple-500',
   },
   {
     id: 'st2', name: 'Sophie Nguyen', role: 'Nail Artist',
     bio: 'Creative artist with a passion for intricate, one-of-a-kind designs.',
     specialties: ['Nail Art', 'Gel', 'SNS'],
     availableDays: [2, 3, 4, 5, 6],
-    initials: 'SN', color: 'bg-violet-300',
+    initials: 'SN', color: 'bg-fuchsia-500',
   },
   {
     id: 'st3', name: 'Emma Park', role: 'Nail Technician',
     bio: 'Detail-oriented technician focused on natural nail health and care.',
     specialties: ['Classic Manicure', 'Pedicure', 'Gel'],
     availableDays: [1, 3, 4, 5, 6],
-    initials: 'EP', color: 'bg-amber-300',
+    initials: 'EP', color: 'bg-indigo-500',
   },
 ]
 

@@ -27,7 +27,7 @@ export default function AdminDashboard() {
       {/* Stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
         {[
-          { label: "Today's Appointments", value: todayAppts.length, color: 'text-rose-600' },
+          { label: "Today's Appointments", value: todayAppts.length, color: 'text-purple-700' },
           { label: 'Confirmed', value: confirmed, color: 'text-green-600' },
           { label: 'Total Clients', value: clients.length, color: 'text-violet-600' },
           { label: 'Revenue (completed)', value: `$${revenue}`, color: 'text-amber-600' },
@@ -43,7 +43,7 @@ export default function AdminDashboard() {
       <div className="bg-white rounded-xl border border-stone-100 shadow-sm">
         <div className="px-6 py-4 border-b border-stone-100 flex items-center justify-between">
           <h2 className="font-semibold text-stone-900">Today's Appointments</h2>
-          <a href="/admin/appointments" className="text-xs text-rose-600 hover:text-rose-700 font-medium">View all →</a>
+          <a href="/admin/appointments" className="text-xs text-purple-700 hover:text-purple-800 font-medium">View all →</a>
         </div>
         {todayAppts.length === 0 ? (
           <p className="px-6 py-10 text-center text-stone-400 text-sm">No appointments today.</p>

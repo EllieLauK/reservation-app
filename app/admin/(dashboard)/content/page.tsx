@@ -43,7 +43,7 @@ function SalonInfoEditor() {
               type="text"
               value={info[key]}
               onChange={e => setInfo(p => ({ ...p, [key]: e.target.value }))}
-              className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300"
+              className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300"
             />
           </div>
         ))}
@@ -62,7 +62,7 @@ function SalonInfoEditor() {
               type="text"
               value={info[key]}
               onChange={e => setInfo(p => ({ ...p, [key]: e.target.value }))}
-              className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300"
+              className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300"
             />
           </div>
         ))}
@@ -70,7 +70,7 @@ function SalonInfoEditor() {
       <button
         onClick={save}
         className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors
-          ${saved ? 'bg-green-600 text-white' : 'bg-rose-600 text-white hover:bg-rose-700'}`}
+          ${saved ? 'bg-green-600 text-white' : 'bg-purple-700 text-white hover:bg-purple-800'}`}
       >
         {saved ? '✓ Saved' : 'Save Changes'}
       </button>
@@ -104,7 +104,7 @@ function ServicesEditor() {
                   type="text"
                   value={service.name}
                   onChange={e => update(service.id, 'name', e.target.value)}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
               <div>
@@ -112,7 +112,7 @@ function ServicesEditor() {
                 <select
                   value={service.category}
                   onChange={e => update(service.id, 'category', e.target.value)}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 >
                   {CATEGORY_OPTIONS.map(c => <option key={c} value={c}>{c}</option>)}
                 </select>
@@ -123,7 +123,7 @@ function ServicesEditor() {
                   type="number"
                   value={service.price}
                   onChange={e => update(service.id, 'price', Number(e.target.value))}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
               <div>
@@ -132,7 +132,7 @@ function ServicesEditor() {
                   type="number"
                   value={service.duration}
                   onChange={e => update(service.id, 'duration', Number(e.target.value))}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
             </div>
@@ -142,7 +142,7 @@ function ServicesEditor() {
                 type="text"
                 value={service.description}
                 onChange={e => update(service.id, 'description', e.target.value)}
-                className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
               />
             </div>
           </div>
@@ -151,7 +151,7 @@ function ServicesEditor() {
       <button
         onClick={save}
         className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors
-          ${saved ? 'bg-green-600 text-white' : 'bg-rose-600 text-white hover:bg-rose-700'}`}
+          ${saved ? 'bg-green-600 text-white' : 'bg-purple-700 text-white hover:bg-purple-800'}`}
       >
         {saved ? '✓ Saved' : 'Save Changes'}
       </button>
@@ -193,7 +193,7 @@ function StaffEditor() {
                   type="text"
                   value={member.name}
                   onChange={e => update(member.id, 'name', e.target.value)}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
               <div>
@@ -202,7 +202,7 @@ function StaffEditor() {
                   type="text"
                   value={member.role}
                   onChange={e => update(member.id, 'role', e.target.value)}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
               <div className="sm:col-span-2">
@@ -211,7 +211,7 @@ function StaffEditor() {
                   type="text"
                   value={member.bio}
                   onChange={e => update(member.id, 'bio', e.target.value)}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
               <div className="sm:col-span-2">
@@ -220,7 +220,7 @@ function StaffEditor() {
                   type="text"
                   value={member.specialties.join(', ')}
                   onChange={e => update(member.id, 'specialties', e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
-                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300 bg-white"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300 bg-white"
                 />
               </div>
             </div>
@@ -239,7 +239,7 @@ function StaffEditor() {
                         update(member.id, 'availableDays', next)
                       }}
                       className={`w-10 h-10 rounded-full text-xs font-medium transition-colors
-                        ${active ? 'bg-rose-600 text-white' : 'bg-white border border-stone-200 text-stone-600 hover:border-rose-300'}`}
+                        ${active ? 'bg-purple-700 text-white' : 'bg-white border border-stone-200 text-stone-600 hover:border-purple-300'}`}
                     >
                       {day}
                     </button>
@@ -253,7 +253,7 @@ function StaffEditor() {
       <button
         onClick={save}
         className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors
-          ${saved ? 'bg-green-600 text-white' : 'bg-rose-600 text-white hover:bg-rose-700'}`}
+          ${saved ? 'bg-green-600 text-white' : 'bg-purple-700 text-white hover:bg-purple-800'}`}
       >
         {saved ? '✓ Saved' : 'Save Changes'}
       </button>

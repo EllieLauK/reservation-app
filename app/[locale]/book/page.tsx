@@ -7,7 +7,7 @@ export default async function BookPage({ params }: { params: Promise<{ locale: s
   const dict = getDictionary(locale as Locale)
 
   return (
-    <div className="flex-1 bg-rose-50/50">
+    <div className="flex-1 bg-purple-50/50">
       <BookingWizard dict={dict.booking} categories={dict.categories} locale={locale} />
     </div>
   )

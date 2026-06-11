@@ -24,7 +24,7 @@ export default function StaffPage() {
                 </div>
                 <div>
                   <h2 className="font-semibold text-stone-900">{member.name}</h2>
-                  <p className="text-sm text-rose-600">{member.role}</p>
+                  <p className="text-sm text-purple-700">{member.role}</p>
                 </div>
               </div>
 
@@ -34,7 +34,7 @@ export default function StaffPage() {
                 <p className="text-xs font-semibold text-stone-400 uppercase tracking-wide mb-2">Specialties</p>
                 <div className="flex flex-wrap gap-1">
                   {member.specialties.map(s => (
-                    <span key={s} className="text-xs bg-rose-50 text-rose-700 px-2 py-0.5 rounded-full">{s}</span>
+                    <span key={s} className="text-xs bg-purple-50 text-purple-800 px-2 py-0.5 rounded-full">{s}</span>
                   ))}
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function StaffPage() {
                     <div
                       key={day}
                       className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-medium
-                        ${member.availableDays.includes(i) ? 'bg-rose-600 text-white' : 'bg-stone-100 text-stone-400'}`}
+                        ${member.availableDays.includes(i) ? 'bg-purple-700 text-white' : 'bg-stone-100 text-stone-400'}`}
                     >
                       {day[0]}
                     </div>
@@ -61,7 +61,7 @@ export default function StaffPage() {
                 </div>
                 <div>
                   <p className="text-xs text-stone-400">Revenue</p>
-                  <p className="text-lg font-bold text-rose-600">${revenue}</p>
+                  <p className="text-lg font-bold text-purple-700">${revenue}</p>
                 </div>
               </div>
             </div>

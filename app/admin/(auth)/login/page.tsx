@@ -40,7 +40,7 @@ export default function LoginPage() {
     <div className="min-h-screen bg-stone-900 flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="w-14 h-14 rounded-2xl bg-rose-600 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-rose-900/50">
+          <div className="w-14 h-14 rounded-2xl bg-purple-700 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-900/50">
             <span className="text-white text-2xl">✦</span>
           </div>
           <h1 className="text-2xl font-bold text-white">Luxe Nails</h1>
@@ -69,7 +69,7 @@ export default function LoginPage() {
                 autoComplete="username"
                 autoFocus
                 placeholder="admin"
-                className="w-full bg-stone-700/50 border border-stone-600 rounded-lg px-3 py-2.5 text-white text-sm placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors"
+                className="w-full bg-stone-700/50 border border-stone-600 rounded-lg px-3 py-2.5 text-white text-sm placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors"
               />
             </div>
             <div>
@@ -83,7 +83,7 @@ export default function LoginPage() {
                 required
                 autoComplete="current-password"
                 placeholder="••••••••"
-                className="w-full bg-stone-700/50 border border-stone-600 rounded-lg px-3 py-2.5 text-white text-sm placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors"
+                className="w-full bg-stone-700/50 border border-stone-600 rounded-lg px-3 py-2.5 text-white text-sm placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors"
               />
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading || !username || !password}
-            className="w-full mt-6 bg-rose-600 text-white py-2.5 rounded-lg font-medium hover:bg-rose-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full mt-6 bg-purple-700 text-white py-2.5 rounded-lg font-medium hover:bg-purple-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {loading ? 'Signing in…' : 'Sign In'}
           </button>

@@ -34,7 +34,7 @@ export default function ClientsPage() {
                 <tr key={client.id} className="hover:bg-stone-50 transition-colors">
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-xs font-bold text-rose-600">
+                      <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-xs font-bold text-purple-700">
                         {client.name.split(' ').map(n => n[0]).join('')}
                       </div>
                       <span className="font-medium text-stone-900">{client.name}</span>
@@ -48,7 +48,7 @@ export default function ClientsPage() {
                     <div className="flex items-center gap-1.5">
                       <span className="font-bold text-stone-900">{client.visitCount}</span>
                       {client.visitCount >= 5 && (
-                        <span className="text-xs bg-rose-50 text-rose-600 px-1.5 py-0.5 rounded-full font-medium">VIP</span>
+                        <span className="text-xs bg-purple-50 text-purple-700 px-1.5 py-0.5 rounded-full font-medium">VIP</span>
                       )}
                     </div>
                   </td>
