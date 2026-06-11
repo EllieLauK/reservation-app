@@ -15,7 +15,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <section className="relative bg-gradient-to-br from-purple-50 to-fuchsia-50 py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <p className="text-purple-600 font-medium text-sm tracking-widest uppercase mb-4">{h.badge}</p>
-          <h1 className="text-5xl font-bold text-stone-900 leading-tight mb-6">
+          <h1 className="text-5xl font-bold text-stone-900 leading-tight mb-6 text-center">
             {h.heroTitle}<br />
             <span className="text-purple-700">{h.heroTitleAccent}</span>
           </h1>
@@ -43,8 +43,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-800 font-bold text-lg flex items-center justify-center">
                   {i + 1}
                 </div>
-                <h3 className="font-semibold text-stone-900">{title}</h3>
-                <p className="text-sm text-stone-500">{desc}</p>
+                <h3 className="font-semibold text-stone-900 text-center">{title}</h3>
+                <p className="text-sm text-stone-500 text-center">{desc}</p>
               </div>
             ))}
           </div>
@@ -82,15 +82,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       {/* Team */}
       <section id="team" className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-stone-900 mb-2">{h.teamTitle}</h2>
-          <p className="text-stone-500 mb-12">{h.teamDesc}</p>
+          <h2 className="text-3xl font-bold text-stone-900 mb-2 text-center">{h.teamTitle}</h2>
+          <p className="text-stone-500 mb-12 text-center">{h.teamDesc}</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {staff.map(member => (
               <div key={member.id} className="flex flex-col items-center gap-3">
                 <div className={`w-20 h-20 rounded-full ${member.color} flex items-center justify-center text-2xl font-semibold text-white shadow-md`}>
                   {member.initials}
                 </div>
-                <div>
+                <div className="text-center">
                   <h3 className="font-semibold text-stone-900">{member.name}</h3>
                   <p className="text-sm text-purple-700 mb-2">{member.role}</p>
                   <p className="text-sm text-stone-500">{member.bio}</p>
